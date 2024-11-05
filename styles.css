@@ -1,0 +1,169 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+#formulario-lista {
+    max-width: 1000px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+}
+
+h1 {
+    text-align: center; 
+    color: #333; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+th, td {
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Estilo de encabezados de tabla */
+th {
+    background-color: #007BFF; /* Fondo azul para encabezados */
+    color: white; /* Color del texto en encabezados */
+}
+
+/* Fila al pasar el ratón */
+tr:hover {
+    background-color: #f1f1f1; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Botones */
+button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px 0; /* Espaciado alrededor del botón */
+    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+/* Cambiar color del botón al pasar el ratón */
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#formulario-abm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#formulario-abm h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#formulario-abm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+}
+#spinner {
+    display: none; /* Oculto inicialmente */
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    /* Centrado en la pantalla */
+   
+}
+#formulario-abm input[type="text"],
+#formulario-abm input[type="number"],
+#formulario-abm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formulario-abm input[type="text"]:focus,
+#formulario-abm input[type="number"]:focus,
+#formulario-abm select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#auto-fields, #camion-fields {
+    margin-top: 15px;
+}
+
+#formulario-abm button {
+    width: 45%;
+    padding: 8px;
+    margin: 15px 5px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+#aceptar {
+    background-color: #3498db;
+    color: white;
+}
+
+#cerrarAbm {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#aceptar:hover {
+    background-color: #2980b9;
+}
+
+#cerrarAbm:hover {
+    background-color: #c0392b;
+}
+#agregar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+#agregar:hover {
+    background-color: #2980b9;
+}
+

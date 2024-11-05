@@ -31,33 +31,29 @@ th, td {
     border-bottom: 1px solid #ddd; 
 }
 
-/* Estilo de encabezados de tabla */
 th {
-    background-color: #007BFF; /* Fondo azul para encabezados */
-    color: white; /* Color del texto en encabezados */
+    background-color: #007BFF; 
+    color: white; 
 }
 
-/* Fila al pasar el ratón */
 tr:hover {
-    background-color: #f1f1f1; /* Cambia el color de fondo al pasar el ratón */
+    background-color: #f1f1f1; 
 }
 
-/* Botones */
 button {
-    background-color: #007BFF; /* Color de fondo azul */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 15px; /* Espaciado interno del botón */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
-    font-size: 16px; /* Tamaño de fuente */
-    margin: 10px 0; /* Espaciado alrededor del botón */
-    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+    margin: 10px 0; 
+    transition: background-color 0.3s; 
 }
 
-/* Cambiar color del botón al pasar el ratón */
 button:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    background-color: #0056b3; 
 }
 
 
@@ -97,7 +93,7 @@ button:hover {
     color: #333;
 }
 #spinner {
-    display: none; /* Oculto inicialmente */
+    display: none;
     width: 50px;
     height: 50px;
     border: 5px solid #f3f3f3;
@@ -105,7 +101,6 @@ button:hover {
     border-radius: 50%;
     animation: spin 1s linear infinite;
 
-    /* Centrado en la pantalla */
    
 }
 #formulario-abm input[type="text"],
